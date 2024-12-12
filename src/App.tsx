@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 
 import Navbar from "./components/Navbar/Navbar";
-import GroupManagement from "./pages/userManagement/UserManagement";
+import GroupManagement from "./pages/Groupmgmt/GroupMgnt";
 import logo from "../src/assets/icons/logo.png";
 import { FaCircleUser } from "react-icons/fa6";
 import { CiLogin } from "react-icons/ci";
@@ -65,12 +65,8 @@ const App: React.FC = () => {
 
         <div className={`main ${showNav ? "shifted" : ""}`}>
           <Routes>
-            <Route path="/" element={<h1>Home Page</h1>} />
-            <Route path="/user-management" element={<GroupManagement />} />
-            <Route
-              path="/user-management/user-form/:id"
-              element={<UserForm />}
-            />
+            <Route path="/" element={<Navigate to="/group-management" />} />
+            <Route path="/group-management" element={<GroupManagement />} />
           </Routes>
         </div>
       </Router>
