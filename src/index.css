@@ -1,0 +1,10 @@
+:root {
+  --primary-color: rgba(12, 93, 159, 1);
+
+  --input-border: rgba(158, 158, 158, 1);
+  --input-text: rgba(74, 74, 74, 1);
+  --input-padding: 8px;
+  --input-radius: 4px;
+  --input-size: 16px;
+  --input-title-size: 18px;
+}

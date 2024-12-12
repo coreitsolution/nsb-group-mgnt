@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Noto+Serif+Thai:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Noto Sans Thai", sans-serif !important;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(240, 242, 245, 1);
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  background-color: white;
+  padding: 20px;
+  height: 70px;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.06);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header-title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.header-subtitle {
+  font-size: 9px;
+  font-weight: 400;
+}
+
+.header-logo {
+  width: 50px;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  display: block;
+  padding: 10px 20px;
+}
+
+ul li a:hover,
+ul li a.active {
+  background-color: #ffffff;
+  color: var(--primary-color);
+}
+
+header svg {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.main {
+  height: 95vh;
+  display: flex;
+  background-color: rgba(240, 242, 245, 1);
+}
+
+.main.shifted {
+  margin-left: 270px;
+  background-color: rgba(240, 242, 245, 1);
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.user-text {
+  color: gray;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.logo-user {
+  color: gray;
+}
+
+.logo-logout {
+  color: rgba(159, 12, 12, 1);
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+}
+
+.content-container {
+  margin: 30px;
+  width: 95%;
+  /* overflow: hidden; */
+}
+
+.title {
+  color: rgba(158, 158, 158, 1);
+  font-size: var(--input-title-size);
+  font-size: 16px;
+}
+
+.btn-success {
+  background-color: rgba(47, 165, 52, 1);
+}
+
+.danger {
+  border: 1px solid rgba(159, 12, 12, 1);
+}
+
+.table-header {
+  background-color: rgba(217, 217, 217, 0.3);
+}
+
+.table-cell {
+  background-color: white;
+}
+
+.paper {
+  background-color: white;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.06);
+  height: 100%;
+  margin-right: 20px;
+  border-radius: var(--input-radius);
+}

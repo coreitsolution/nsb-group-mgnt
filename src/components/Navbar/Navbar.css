@@ -1,0 +1,73 @@
+.sidenav {
+  width: 270px;
+  background-color: var(--primary-color);
+  color: white;
+  height: 100vh;
+  padding: 10px 0;
+  position: fixed;
+  display: none;
+}
+
+.sidenav.active {
+  display: block;
+}
+
+.menu-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-header {
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu-header:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.prefix-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.submenu.open {
+  max-height: 300px;
+}
+
+.submenu-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.submenu-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.submenu-item.active {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+/* .submenu-item.active p {
+  font-weight: 800;
+} */
+
+.submenu-text {
+  margin-left: 33px;
+  font-size: 16px;
+  font-weight: 300;
+}

@@ -1,0 +1,15 @@
+.customInput {
+  width: 100%;
+  padding: var(--input-padding);
+  border: 1px solid var(--input-border);
+  border-radius: var(--input-radius);
+  outline: none;
+  font-size: var(--input-size);
+  color: var(--input-text);
+  transition: border-color 0.2s ease-in-out;
+  background-color: #ffffff;
+}
+
+.customInput:focus {
+  border: 1px solid var(--primary-color);
+}
