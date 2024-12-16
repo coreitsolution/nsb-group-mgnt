@@ -248,6 +248,7 @@ const PermissionsTable = () => {
   };
 
   return (
+    
     <TableContainer
       component={Paper}
       sx={{
