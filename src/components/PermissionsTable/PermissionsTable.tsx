@@ -248,7 +248,6 @@ const PermissionsTable = () => {
   };
 
   return (
-    
     <TableContainer
       component={Paper}
       sx={{
@@ -324,7 +323,7 @@ const PermissionsTable = () => {
               </TableRow>
               {category.rows.map((row, rowIndex) => (
                 <TableRow key={row.name}>
-                  <TableCell className={styles.tableTitleCell}>
+                  <TableCell className={styles.tableTitleCell} size="small">
                     <div className="flex items-center">
                       <div
                         style={{
@@ -339,6 +338,7 @@ const PermissionsTable = () => {
                   </TableCell>
                   {Object.keys(row.permissions).map((permission) => (
                     <TableCell
+                      size="small"
                       key={permission}
                       align="center"
                       sx={{ fontSize: "16px" }}

@@ -13,6 +13,7 @@ import {
   DialogTitle,
   Snackbar,
 } from "@mui/material";
+import { optionsGroupUser } from "../../mock-data/options";
 
 const GroupManagement: React.FC = () => {
   const [selectedValue, setSelectedValue] = useState("");
@@ -55,7 +56,7 @@ const GroupManagement: React.FC = () => {
     <div className="content-container">
       <HeaderPage name="จัดการกลุ่มผู้ใช้งาน" />
       <div className="paper">
-        <div className="p-5">
+        <div style={{ padding: "20px" }}>
           <div className="w-1/4">
             <CustomInput
               type="number"
@@ -76,7 +77,7 @@ const GroupManagement: React.FC = () => {
             <div className="w-1/4">
               <CustomSelect
                 id="test"
-                options={options}
+                options={optionsGroupUser}
                 title="กลุ่มผู้ใช้งาน"
               />
             </div>
@@ -92,7 +93,7 @@ const GroupManagement: React.FC = () => {
           <div className="mt-4" style={{ overflowY: "auto" }}>
             <PermissionsTable />
           </div>
-          <div className="flex justify-end mt-2 gap-2">
+          <div className="flex justify-end mt-8 gap-2">
             <CustomButton label="ยกเลิก" background="white" />
             <CustomButton
               label="บันทึก"
@@ -116,7 +117,12 @@ const GroupManagement: React.FC = () => {
           </DialogContentText>
         </DialogContent>
         <DialogActions
-          style={{ display: "flex", justifyContent: "center", padding: "20px" }}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            padding: "20px",
+            marginTop: "50px",
+          }}
         >
           <div>
             <CustomButton
